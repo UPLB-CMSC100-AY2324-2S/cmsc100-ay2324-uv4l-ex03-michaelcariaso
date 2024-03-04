@@ -103,8 +103,18 @@ function reversePassword(password){
 
 //store password function
 function storePassword(name, password1, password2){
+    //object that will contain name and newpassword
+    namePass = {
+        value: {
+            name:"", 
+            newpassword:"",
+        },
 
-
+        view: function(){
+            console.log(this.value)
+        }
+       
+    }
 }
 
 

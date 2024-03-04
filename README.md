@@ -17,3 +17,4 @@
 6. Added more loops and conditions for checking if the password contains uppercase and lowercase characters
 7. Added more conditions in the validatePassword function for checking the values of the boolean variables and for returning the correct value
 8. Implemented the reversePassword function and added a loop for reversing the string parameter and return statement
+9. Created and initialized the object to be returned in the storePassword function
