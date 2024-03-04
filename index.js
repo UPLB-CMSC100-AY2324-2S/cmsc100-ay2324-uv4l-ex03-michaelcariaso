@@ -67,10 +67,18 @@ function validatePassword(password1, password2){
         }
     }
 
+    //checking if all three requirements for characters are passed
+    if(contains_num == true && has_uppercase == true && has_lowercase == true){
+        passed = true;
+    }
 
+    //returning true if the password is valid, else return false
+    if(match == true && minimum == true && passed == true){
+        return true;
+    }else{
+        return false;
+    }
 
-
-    
 }
 
 

@@ -15,3 +15,4 @@
 4. Initialized some boolean variables in the validatePassword function for checking the two string parameters
 5. Created more boolean variables and added a condition and nested loop in the first function for checking if the password contains the required characters 
 6. Added more loops and conditions for checking if the password contains uppercase and lowercase characters
+7. Added more conditions in the validatePassword function for checking the values of the boolean variables and for returning the correct value
