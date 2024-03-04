@@ -133,6 +133,9 @@ function storePassword(name, password1, password2){
 
 }
 
+storePassword("John", "Pass1234", "Pass1234") // returns {name: "John", newpassword:"4321ssaP"}
+storePassword("John", "Pass123", "Pass12345") // returns {name: "John", newpassword:"Pass123"}
+
 
 
 

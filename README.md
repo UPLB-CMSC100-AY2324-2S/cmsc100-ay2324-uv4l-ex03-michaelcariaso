@@ -21,3 +21,4 @@
 10. Added the name parameter as the value of the name key of the object and called the validatePassword function 
 11. Created the condition for checking if the password is valid and changed the value of the password key in the object
 12. Added the return statement for the printing of the contents of the object
+13. Added test inputs for checking the output
