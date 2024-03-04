@@ -13,3 +13,4 @@
 2. Edited README.md and created js file
 3. Created the three initial functions to be implemented
 4. Initialized some boolean variables in the validatePassword function for checking the two string parameters
+5. Created more boolean variables and added a condition and nested loop in the first function for checking if the password contains the required characters 
