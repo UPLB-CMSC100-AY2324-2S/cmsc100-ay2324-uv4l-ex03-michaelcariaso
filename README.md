@@ -10,4 +10,5 @@
 
 ## Commit Log
 1. Initial commit
-2. Edited README.md
+2. Edited README.md and created js file
+3. Created the three initial functions to be implemented
