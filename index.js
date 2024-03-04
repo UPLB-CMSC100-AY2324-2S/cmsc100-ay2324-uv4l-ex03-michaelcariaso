@@ -51,6 +51,24 @@ function validatePassword(password1, password2){
         }
     }
 
+     //loop for checking if there is at least 1 uppercase 
+     for(let i = 0; i < length; i++){
+        //checking if there is 1 uppercase
+        if(password1[i] == uppercase[i]){
+            has_uppercase = true;
+        }
+    }
+
+    //loop for checking if there is at least 1 lowercase
+    for(let i = 0; i < length; i++){
+        //checking if there is 1 uppercase
+        if(password1[i] == lowercase[i]){
+            has_lowercase = true;
+        }
+    }
+
+
+
 
     
 }
