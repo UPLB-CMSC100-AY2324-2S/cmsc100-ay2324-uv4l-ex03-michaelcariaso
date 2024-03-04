@@ -115,6 +115,12 @@ function storePassword(name, password1, password2){
         }
        
     }
+
+    //put the name as the value of the key name
+    namePass.value.name = name;
+    //check if password is  valid
+    valid = validatePassword(password1, password2);
+
 }
 
 
