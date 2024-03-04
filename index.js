@@ -51,6 +51,9 @@ function validatePassword(password1, password2){
         }
     }
 
+    lowercase = password1.toLowerCase(); //making the password all lowercase characters
+    uppercase = password1.toUpperCase(); //making the password all uppercase characters
+
      //loop for checking if there is at least 1 uppercase 
      for(let i = 0; i < length; i++){
         //checking if there is 1 uppercase
