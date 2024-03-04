@@ -85,7 +85,19 @@ function validatePassword(password1, password2){
 
 //reverse password function
 function reversePassword(password){
+    //length of password
+    length = password.length;
+    //variable for reversed string
+    reversed = "";
 
+    //loop for reversing the password by concatenating
+    for(let i = (length-1); i >= 0; i--){
+        //concat the characters together
+        reversed = reversed + password[i];
+    }
+
+    //return reversed password
+    return reversed;
 }
 
 
