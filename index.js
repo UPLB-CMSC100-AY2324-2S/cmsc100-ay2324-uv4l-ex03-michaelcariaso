@@ -121,6 +121,14 @@ function storePassword(name, password1, password2){
     //check if password is  valid
     valid = validatePassword(password1, password2);
 
+     //if the password is valid
+     if(valid == true){
+        namePass.value.newpassword = reversePassword(password1);
+    }else{
+        namePass.value.newpassword = password1;
+    }
+
+
 }
 
 
