@@ -128,6 +128,8 @@ function storePassword(name, password1, password2){
         namePass.value.newpassword = password1;
     }
 
+    //return object containing the name and password
+    return namePass.view();
 
 }
 
