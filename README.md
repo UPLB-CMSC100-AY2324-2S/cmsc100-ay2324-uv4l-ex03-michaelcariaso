@@ -24,3 +24,4 @@
 13. Added test inputs for checking the output
 14. Added missing variables for turning the password into lowercase and uppercase characters
 15. Converted the strings in the validatePassword function into arrays
+16. Made the reversePassword function use array push to make the reverse password

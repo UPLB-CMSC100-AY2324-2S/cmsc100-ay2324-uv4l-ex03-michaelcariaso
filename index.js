@@ -116,16 +116,22 @@ function reversePassword(password){
     //length of password
     length = password.length;
     //variable for reversed string
-    reversed = "";
+    reversed = [];
 
     //loop for reversing the password by concatenating
     for(let i = (length-1); i >= 0; i--){
-        //concat the characters together
-        reversed = reversed + password[i];
+        //push the string into the reversed array starting from the last 
+        reversed.push(password[i]);
+    }
+
+    reversedString = "";
+    //turn the array of reversed password back to string as the return value
+    for(let i = 0; i < length; i++){
+        reversedString = reversedString + reversed[i];
     }
 
     //return reversed password
-    return reversed;
+    return reversedString;
 }
 
 
@@ -137,7 +143,7 @@ function storePassword(name, password1, password2){
             name:"", 
             newpassword:"",
         },
-
+        //view the object to be returned
         view: function(){
             console.log(this.value)
         }
