@@ -84,6 +84,7 @@ function validatePassword(password1, password2){
         //checking if there is 1 uppercase
         if(array_Password1[i] == uppercase[i]){
             has_uppercase = true;
+            break; //already found 1 uppercase
         }
     }
 
@@ -92,6 +93,7 @@ function validatePassword(password1, password2){
         //checking if there is 1 uppercase
         if(array_Password1[i] == lowercase[i]){
             has_lowercase = true;
+            break; //already found 1 lowercase
         }
     }
 
@@ -117,15 +119,18 @@ function reversePassword(password){
     length = password.length;
     //variable for reversed string
     reversed = [];
+    
+    //password array
+    password_Array = password.split("");
 
     //loop for reversing the password by concatenating
     for(let i = (length-1); i >= 0; i--){
         //push the string into the reversed array starting from the last 
-        reversed.push(password[i]);
+        reversed.push(password_Array[i]);
     }
 
     reversedString = "";
-    //turn the array of reversed password back to string as the return value
+    //turn the array of reversed password back to string for the return value
     for(let i = 0; i < length; i++){
         reversedString = reversedString + reversed[i];
     }
