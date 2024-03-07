@@ -40,6 +40,7 @@ function validatePassword(password1, password2){
         for(let i = 0; i < length; i++){
             if(array_Password1[i] != array_Password2[i]){
                 match = false; //different string
+                break; //already found different characters 
             }
         }
     }
@@ -125,7 +126,7 @@ function reversePassword(password){
 
     //loop for reversing the password by concatenating
     for(let i = (length-1); i >= 0; i--){
-        //push the string into the reversed array starting from the last 
+        //push the string into the reversed array starting from the last index using push
         reversed.push(password_Array[i]);
     }
 

@@ -27,3 +27,4 @@
 16. chore: Made the reversePassword function use array push to make the reverse password
 17. docs: Edited README
 18. chore: Added another array into reversePassword function for checking
+19. chore: Added break to some loop
