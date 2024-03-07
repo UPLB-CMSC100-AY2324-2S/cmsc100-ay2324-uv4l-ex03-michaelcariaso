@@ -23,3 +23,4 @@
 12. Added the return statement for the printing of the contents of the object
 13. Added test inputs for checking the output
 14. Added missing variables for turning the password into lowercase and uppercase characters
+15. Converted the strings in the validatePassword function into arrays
