@@ -28,3 +28,4 @@
 17. docs: Edited README
 18. chore: Added another array into reversePassword function for checking
 19. chore: Added break to some loop
+20. fix: Fixed bug where it would consider every digit uppercase/lowercase

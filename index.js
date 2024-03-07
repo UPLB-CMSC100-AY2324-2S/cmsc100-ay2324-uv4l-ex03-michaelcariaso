@@ -80,23 +80,59 @@ function validatePassword(password1, password2){
     //convert to string arrays again
     lowercase = lowercase.split(""); 
     uppercase = uppercase.split("");
-     //loop for checking if there is at least 1 uppercase 
-     for(let i = 0; i < length; i++){
+    
+    //loop for checking if there is at least 1 uppercase 
+    for(let i = 0; i < length; i++){
         //checking if there is 1 uppercase
         if(array_Password1[i] == uppercase[i]){
-            has_uppercase = true;
-            break; //already found 1 uppercase
+            is_num = false; //boolean for checking if num
+
+            //check if the current character index is a number
+            for(let j = 0; j < num_count; j++){
+                //check if character is a digit
+                if(digits[j] == uppercase[i]){
+                    is_num = true //found a digit
+                    break;
+                }
+
+            }
+
+            //found an uppercase that is not a number
+            if(is_num == false) {
+                has_uppercase = true;
+                break; //already found 1 uppercase
+            }
+            
+            
         }
     }
 
     //loop for checking if there is at least 1 lowercase
     for(let i = 0; i < length; i++){
-        //checking if there is 1 uppercase
+        //checking if there is 1 lowercase
         if(array_Password1[i] == lowercase[i]){
-            has_lowercase = true;
-            break; //already found 1 lowercase
+            is_num = false //boolean for checking if num
+
+            //check if the current character index is a number
+            for(let j = 0; j < num_count; j++){
+                //check if character is a digit
+                if(digits[j] == lowercase[i]){
+                    is_num = true //found a digit
+                    break;
+                }
+
+            }
+
+            //found a lowercase that is not a number
+            if(is_num == false) {
+                has_lowercase = true;
+                break; //already found 1 lowercase
+            }
+            
+            
         }
     }
+
 
     //checking if all three requirements for characters are passed
     if(contains_num == true && has_uppercase == true && has_lowercase == true){
